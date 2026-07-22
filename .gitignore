@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Generated / recorded audio and bit dumps
+*.wav
+rx_bits.csv
+TDC_Binary.csv
+
+# OS / editor
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*.swp

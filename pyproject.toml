@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ofdm-dqpsk"
+version = "1.0.0"
+description = "OFDM-DQPSK audio transceiver for acoustic communication (EE3005)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Aadarsh Ramachandran" },
+    { name = "Manoj NH" },
+]
+keywords = [
+    "ofdm",
+    "dqpsk",
+    "acoustic",
+    "communications",
+    "dsp",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "sounddevice",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Report = "report.pdf"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
